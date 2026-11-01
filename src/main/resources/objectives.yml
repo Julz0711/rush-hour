@@ -1,0 +1,661 @@
+# Versioned vanilla objective definitions. Unknown keys are skipped with a warning.
+MOB:
+  chicken:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cow:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pig:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sheep:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  zombie:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  skeleton:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spider:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  creeper:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  drowned:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  squid:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  glow_squid:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cod:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  salmon:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  rabbit:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  slime:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  silverfish:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  husk:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stray:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  witch:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pillager:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  guardian:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  elder_guardian:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  evoker:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  ravager:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  breeze:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  phantom:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  cave_spider:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  blaze:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  ghast:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  magma_cube:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  wither_skeleton:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  piglin:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  piglin_brute:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  hoglin:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  zoglin:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  strider:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  enderman:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  shulker:
+    tier: HARD
+    routes: [END]
+    enabled: true
+  ender_dragon:
+    tier: INSANE
+    routes: [END]
+    enabled: false
+  wither:
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: false
+  warden:
+    tier: INSANE
+    routes: [OVERWORLD]
+    enabled: false
+  illusioner:
+    tier: INSANE
+    routes: [OVERWORLD]
+    enabled: false
+  giant:
+    tier: INSANE
+    routes: [OVERWORLD]
+    enabled: false
+  zombie_horse:
+    tier: INSANE
+    routes: [OVERWORLD]
+    enabled: false
+ADVANCEMENT:
+  story/mine_stone:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/upgrade_tools:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/smelt_iron:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/obtain_armor:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/lava_bucket:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/iron_tools:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/deflect_arrow:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/form_obsidian:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/mine_diamond:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/shiny_gear:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/enchant_item:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  husbandry/plant_seed:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  husbandry/breed_an_animal:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  husbandry/tame_an_animal:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  adventure/kill_a_mob:
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  story/enter_the_nether:
+    tier: HARD
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  story/follow_ender_eye:
+    tier: HARD
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  nether/find_fortress:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether/obtain_blaze_rod:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether/obtain_ancient_debris:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether/find_bastion:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether/distract_piglin:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  end/enter_end_gateway:
+    tier: INSANE
+    routes: [END]
+    enabled: true
+  end/find_end_city:
+    tier: INSANE
+    routes: [END]
+    enabled: true
+  end/elytra:
+    tier: INSANE
+    routes: [END]
+    enabled: true
+  adventure/adventuring_time:
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: false
+  adventure/kill_all_mobs:
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: false
+  husbandry/balanced_diet:
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: false
+  husbandry/bred_all_animals:
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: false
+STRUCTURE:
+  village_plains:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  village_desert:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  village_savanna:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  village_snowy:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  village_taiga:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ruined_portal:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  mineshaft:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  shipwreck:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  shipwreck_beached:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  buried_treasure:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ocean_ruin_cold:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ocean_ruin_warm:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  desert_pyramid:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_pyramid:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  igloo:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pillager_outpost:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  swamp_hut:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  monument:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  mansion:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  ancient_city:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  trial_chambers:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  stronghold:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  trail_ruins:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  fortress:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  bastion_remnant:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  ruined_portal_nether:
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  end_city:
+    tier: HARD
+    routes: [END]
+    enabled: true
+BIOME:
+  plains:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sunflower_plains:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  flower_forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  birch_forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  old_growth_birch_forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dark_forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  taiga:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  snowy_taiga:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  old_growth_pine_taiga:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  old_growth_spruce_taiga:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  savanna:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  savanna_plateau:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  windswept_savanna:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  jungle:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sparse_jungle:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_jungle:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  desert:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  badlands:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  eroded_badlands:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  wooded_badlands:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  meadow:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_grove:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  grove:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  snowy_slopes:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  frozen_peaks:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  jagged_peaks:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  stony_peaks:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  windswept_hills:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  windswept_gravelly_hills:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  windswept_forest:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  beach:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  snowy_beach:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  stony_shore:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  river:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  frozen_river:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  swamp:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_swamp:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  deep_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cold_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  deep_cold_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  frozen_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  deep_frozen_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lukewarm_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  deep_lukewarm_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  warm_ocean:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  snowy_plains:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ice_spikes:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dripstone_caves:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lush_caves:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pale_garden:
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  mushroom_fields:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deep_dark:
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  nether_wastes:
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_sand_valley:
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_forest:
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_forest:
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  basalt_deltas:
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  the_end:
+    tier: MEDIUM
+    routes: [END]
+    enabled: true
+  end_highlands:
+    tier: MEDIUM
+    routes: [END]
+    enabled: true
+  end_midlands:
+    tier: MEDIUM
+    routes: [END]
+    enabled: true
+  small_end_islands:
+    tier: MEDIUM
+    routes: [END]
+    enabled: true
+  end_barrens:
+    tier: MEDIUM
+    routes: [END]
+    enabled: true

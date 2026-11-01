@@ -1,0 +1,54 @@
+# Changes are locked while a round is preparing, playing, paused or revealing.
+deadline-seconds: 3600 # 0 = unlimited; otherwise 300..21600
+countdown-seconds: 10
+mode: SOLO # SOLO, TEAMS
+game-type: CLASSIC # CLASSIC, RACE, BINGO
+teams:
+  count: 2
+  size-limit: 4
+skip-tokens: 3
+give-skipped-item: false
+chaos: false
+dimensions: [OVERWORLD, NETHER, END]
+hidden-leaderboard: false
+target-weights:
+  ITEM: 60
+  MOB: 0
+  ADVANCEMENT: 0
+  STRUCTURE: 0
+  BIOME: 0
+difficulty:
+  enabled: true
+  ramp: true
+  weights:
+    EASY: 60
+    MEDIUM: 30
+    HARD: 9
+    INSANE: 1
+  points:
+    EASY: 1
+    MEDIUM: 1
+    HARD: 2
+    INSANE: 3
+bingo-row-bonus: 5
+rules:
+  keep-inventory: true
+  pvp: false
+  death-penalty: NONE # NONE, POINT, TARGET
+  starter-kit: [STONE_PICKAXE:1, STONE_AXE:1, BREAD:16]
+late-join:
+  mode: SPECTATE # SPECTATE, PLAY
+  catch-up-points: 0 # Per elapsed minute, capped at the leader's score
+  idle-spectate-seconds: 0 # 0 disables idle elimination
+world:
+  lobby: '' # Empty = first loaded overworld
+  fresh: false
+  seed: '' # Empty = random
+  spread-radius: 128
+  pregen-radius-chunks: 2
+recap:
+  beat-ticks: 20
+catalog:
+  whitelist: false
+  overrides: {}
+  categories: {}

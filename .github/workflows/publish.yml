@@ -1,0 +1,41 @@
+name: Publish plugin
+# Publication is explicit. Ordinary pushes only build and test.
+on:
+  workflow_dispatch:
+    inputs:
+      destination:
+        description: Platform (configure its project and token first)
+        type: choice
+        options: [modrinth, hangar, both]
+        required: true
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v6
+      - run: chmod +x gradlew
+      - run: ./gradlew clean build --no-daemon
+      - name: Publish to Modrinth
+        if: inputs.destination == 'modrinth' || inputs.destination == 'both'
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+        run: |
+          test -n "$MODRINTH_TOKEN" && test -n "$MODRINTH_PROJECT_ID"
+          ./gradlew modrinth --no-daemon
+      - name: Publish to Hangar
+        if: inputs.destination == 'hangar' || inputs.destination == 'both'
+        env:
+          HANGAR_API_TOKEN: ${{ secrets.HANGAR_API_TOKEN }}
+          HANGAR_PROJECT: ${{ vars.HANGAR_PROJECT }}
+        run: |
+          test -n "$HANGAR_API_TOKEN" && test -n "$HANGAR_PROJECT"
+          ./gradlew publishPluginPublicationToHangar --no-daemon

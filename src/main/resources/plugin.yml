@@ -1,0 +1,14 @@
+name: RushHour
+version: '${version}'
+main: io.github.julz0711.rushhour.RushHourPlugin
+api-version: '26.3'
+description: A configurable survival objective race for friends.
+author: Julz0711
+website: https://github.com/Julz0711/rush-hour
+permissions:
+  rushhour.host:
+    description: Configure and control Rush Hour rounds
+    default: op
+  rushhour.play:
+    description: Join Rush Hour, use skips and the team backpack
+    default: true

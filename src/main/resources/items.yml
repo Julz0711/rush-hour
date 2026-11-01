@@ -1,0 +1,9080 @@
+# Minecraft 26.3 / Paper build 230 Material snapshot.
+# routes are alternative acquisition paths; + means all dimensions on that path are required.
+# A conservative all-dimension route is used where the exact path needs review.
+# Creative-only items are visible but disabled; a host can explicitly override them.
+items:
+  abandoned_camp_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  acacia_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  acacia_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  activator_rail:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  air:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  allay_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  allium:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  amethyst_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  amethyst_cluster:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  amethyst_shard:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ancient_debris:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  andesite:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  andesite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  andesite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  andesite_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  angler_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  anvil:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  apple:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  archer_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  armadillo_scute:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  armadillo_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  armor_stand:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  arms_up_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  arrow:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  attached_melon_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  attached_pumpkin_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  axolotl_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  axolotl_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  azalea:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  azalea_leaves:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  azure_bluet:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  baked_potato:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bamboo:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_block:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_chest_raft:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_mosaic:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_mosaic_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_mosaic_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_raft:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bamboo_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  barrel:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  barrier:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  basalt:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  bat_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  beacon:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bedrock:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  beef:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  beehive:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  beetroot:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  beetroots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  beetroot_seeds:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  beetroot_soup:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bee_nest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bee_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  bell:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  big_dripleaf:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  big_dripleaf_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  birch_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  birch_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  blackstone:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  blackstone_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  blackstone_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  blackstone_wall:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  black_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  black_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  black_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blade_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  blast_furnace:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blaze_powder:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  blaze_rod:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  blaze_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  blue_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_egg:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_ice:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  blue_orchid:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  blue_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  blue_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  blue_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  bogged_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  bolt_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bone:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  bone_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bone_meal:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  book:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bookshelf:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  bordure_indented_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bow:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  bowl:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  brain_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brain_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brain_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brain_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bread:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  breeze_rod:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  breeze_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  brewer_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brewing_stand:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brick:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  bricks:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  brown_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_egg:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_mushroom:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  brown_mushroom_block:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  brown_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brown_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  brush:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  bubble_column:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bubble_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bubble_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bubble_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bubble_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  budding_amethyst:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  bundle:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  buried_ancient_city_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  buried_mineshaft_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  buried_treasure_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  buried_trial_chambers_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  burn_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cactus:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cactus_flower:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cake:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  calcite:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  calibrated_sculk_sensor:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  camel_husk_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  camel_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  campfire:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  candle:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  candle_cake:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  carrot:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  carrots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  carrot_on_a_stick:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cartography_table:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  carved_pumpkin:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cat_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  cauldron:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cave_air:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cave_spider_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  cave_vines:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cave_vines_plant:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chainmail_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chainmail_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chainmail_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chainmail_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chain_command_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  charcoal:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cherry_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  chest:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  chest_minecart:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chicken:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  chicken_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  chipped_anvil:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chiseled_bookshelf:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  chiseled_cinnabar:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_deepslate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_nether_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_polished_blackstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_quartz_block:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  chiseled_red_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_resin_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_stone_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_sulfur:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_tuff:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chiseled_tuff_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  chorus_flower:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  chorus_fruit:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  chorus_plant:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cinnabar_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  clay:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  clay_ball:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  clock:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  closed_eyeblossom:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  coal:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  coal_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  coal_ore:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  coarse_dirt:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  coast_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cobbled_deepslate:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cobbled_deepslate_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cobbled_deepslate_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cobbled_deepslate_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cobblestone:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cobblestone_slab:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cobblestone_stairs:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cobblestone_wall:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cobweb:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cocoa:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cocoa_beans:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cod:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cod_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cod_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  command_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  command_block_minecart:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  comparator:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  compass:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  composter:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  conduit:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cooked_beef:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_chicken:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_cod:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_mutton:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_porkchop:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_rabbit:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cooked_salmon:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cookie:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_axe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_golem_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_hoe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_horse_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_ingot:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_nautilus_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_nugget:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  copper_pickaxe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_shovel:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_sword:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  copper_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  copper_wall_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cornflower:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  cow_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  cracked_deepslate_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cracked_deepslate_tiles:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cracked_nether_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cracked_polished_blackstone_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cracked_stone_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  crafter:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  crafting_table:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  creaking_heart:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  creaking_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  creeper_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  creeper_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  creeper_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  creeper_wall_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  crimson_button:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_door:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_fence:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_fence_gate:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_fungus:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_hanging_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_hyphae:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_nylium:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_planks:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_pressure_plate:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_roots:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_shelf:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_stem:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_trapdoor:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_wall_hanging_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crimson_wall_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  crossbow:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  crying_obsidian:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_red_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_red_sandstone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cut_sandstone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  cyan_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  cyan_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  cyan_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  damaged_anvil:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dandelion:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  danger_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dark_oak_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dark_prismarine:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dark_prismarine_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dark_prismarine_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  daylight_detector:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_brain_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_brain_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_brain_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_brain_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_bubble_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_bubble_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_bubble_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_bubble_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_bush:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dead_fire_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_fire_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_fire_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_fire_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_horn_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_horn_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_horn_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_horn_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_tube_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_tube_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_tube_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dead_tube_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  debug_stick:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  decorated_pot:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_coal_ore:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_copper_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_diamond_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_emerald_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_gold_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_iron_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_lapis_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_redstone_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  deepslate_tiles:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_tile_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_tile_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  deepslate_tile_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  desert_pyramid_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  desert_village_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  detector_rail:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  diamond:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_axe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  diamond_block:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  diamond_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_hoe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  diamond_horse_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  diamond_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_nautilus_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  diamond_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  diamond_pickaxe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diamond_shovel:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  diamond_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  diamond_sword:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  diorite:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  diorite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  diorite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  diorite_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dirt:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dirt_path:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  disc_fragment_5:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dispenser:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  dolphin_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  donkey_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  dragon_breath:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  dragon_egg:
+    category: end
+    tier: INSANE
+    routes: [END]
+    enabled: true
+  dragon_head:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  dragon_wall_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dried_ghast:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dried_kelp:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  dried_kelp_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dripstone_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  dropper:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  drowned_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  dune_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  echo_shard:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  egg:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  elder_guardian_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  elytra:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  emerald:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  emerald_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  emerald_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  enchanted_book:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  enchanted_golden_apple:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  enchanting_table:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  enderman_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  endermite_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ender_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  ender_dragon_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ender_eye:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  ender_pearl:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  end_crystal:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  end_gateway:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  end_portal:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  end_portal_frame:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  end_rod:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  end_stone:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  end_stone_bricks:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  end_stone_brick_slab:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  end_stone_brick_stairs:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  end_stone_brick_wall:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  evoker_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  experience_bottle:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  explorer_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  exposed_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  eye_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  farmland:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  feather:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  fermented_spider_eye:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fern:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  field_masoned_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  filled_map:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  fire:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  firefly_bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  firework_rocket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  firework_star:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  fire_charge:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  fire_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fire_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fire_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fire_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fishing_rod:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  fletching_table:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  flint:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  flint_and_steel:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  flowering_azalea:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  flowering_azalea_leaves:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  flower_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  flower_pot:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  flow_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  flow_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  flow_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  fox_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  friend_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  frogspawn:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  frog_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  frosted_ice:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  furnace:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  furnace_minecart:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  ghast_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ghast_tear:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  gilded_blackstone:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  glass:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  glass_bottle:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  glass_pane:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  glistering_melon_slice:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  globe_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  glowstone:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  glowstone_dust:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  glow_berries:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  glow_ink_sac:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  glow_item_frame:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  glow_lichen:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  glow_squid_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  goat_horn:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  goat_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  golden_apple:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_axe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_carrot:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_dandelion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_hoe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_horse_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_nautilus_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_pickaxe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_shovel:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  golden_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  golden_sword:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gold_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  gold_ingot:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD, NETHER, END]
+    enabled: true
+  gold_nugget:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  gold_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  granite:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  granite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  granite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  granite_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  grass_block:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  gravel:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  gray_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  gray_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  gray_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  green_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  green_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  grindstone:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  guardian_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  gunpowder:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  guster_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  guster_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  hanging_roots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  happy_ghast_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  hay_block:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  heartbreak_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  heart_of_the_sea:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  heart_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  heavy_core:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  heavy_weighted_pressure_plate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  hoglin_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  honeycomb:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  honeycomb_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  honey_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  honey_bottle:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  hopper:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  hopper_minecart:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  horn_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  horn_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  horn_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  horn_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  horse_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  host_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  howl_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  husk_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ice:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  infested_chiseled_stone_bricks:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_cobblestone:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_cracked_stone_bricks:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_deepslate:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_mossy_stone_bricks:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_stone:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  infested_stone_bricks:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ink_sac:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  iron_axe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_bars:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  iron_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  iron_golem_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  iron_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_hoe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_horse_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  iron_ingot:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_nautilus_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  iron_nugget:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  iron_pickaxe:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_shovel:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  iron_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  iron_sword:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  iron_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  item_frame:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  jack_o_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  jigsaw:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  jukebox:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_pyramid_map:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  jungle_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  kelp:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  kelp_plant:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  knowledge_book:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ladder:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  lantern:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lapis_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lapis_lazuli:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lapis_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  large_amethyst_bud:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  large_fern:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  lava:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  lava_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lava_cauldron:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  lead:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  leaf_litter:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  leather:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  leather_boots:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  leather_chestplate:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  leather_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  leather_horse_armor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  leather_leggings:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lectern:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lever:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  light:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  light_blue_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  light_blue_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_blue_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  light_gray_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_gray_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  light_weighted_pressure_plate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  lilac:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  lily_of_the_valley:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  lily_pad:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  lime_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  lime_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lime_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  lingering_potion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  llama_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  lodestone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  loom:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  mace:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  magenta_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magenta_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  magma_block:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  magma_cream:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  magma_cube_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  mangrove_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_propagule:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_roots:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mangrove_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  map:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  medium_amethyst_bud:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  melon:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  melon_seeds:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  melon_slice:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  melon_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  milk_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  minecart:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  miner_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mojang_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mooshroom_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  mossy_cobblestone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_cobblestone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_cobblestone_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_cobblestone_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_stone_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_stone_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_stone_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mossy_stone_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  moss_block:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  moss_carpet:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mourner_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  moving_piston:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mud:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  muddy_mangrove_roots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mud_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mud_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mud_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mud_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mule_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  mushroom_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mushroom_stew:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  music_disc_11:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_13:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_5:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_blocks:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_bounce:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_cat:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_chirp:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_creator:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_creator_music_box:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_far:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_lava_chicken:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_mall:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_mellohi:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_otherside:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_pigstep:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_precipice:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_relic:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_stal:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_strad:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_tears:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_wait:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  music_disc_ward:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  mutton:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  mycelium:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  name_tag:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  nautilus_shell:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  nautilus_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  netherite_axe:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_block:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  netherite_boots:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_chestplate:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_helmet:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_hoe:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_horse_armor:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  netherite_ingot:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  netherite_leggings:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_nautilus_armor:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  netherite_pickaxe:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_scrap:
+    category: nether
+    tier: INSANE
+    routes: [NETHER]
+    enabled: true
+  netherite_shovel:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_spear:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  netherite_sword:
+    category: equipment
+    tier: INSANE
+    routes: [OVERWORLD+NETHER]
+    enabled: true
+  netherite_upgrade_smithing_template:
+    category: nether
+    tier: INSANE
+    routes: [NETHER]
+    enabled: true
+  netherrack:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_brick:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_bricks:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_brick_fence:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_brick_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_brick_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_brick_wall:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_gold_ore:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether_portal:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  nether_quartz_ore:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  nether_sprouts:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_star:
+    category: misc
+    tier: INSANE
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  nether_wart:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  nether_wart_block:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  note_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  oak_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  observer:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  obsidian:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  ocean_monument_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  ocelot_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ochre_froglight:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ominous_bottle:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  ominous_trial_key:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  open_eyeblossom:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_poplar_leaves:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  orange_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_tulip:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  orange_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  oxeye_daisy:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  oxidized_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  oxidized_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  packed_ice:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  packed_mud:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  painting:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pale_hanging_moss:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pale_moss_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pale_moss_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pale_oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  panda_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  paper:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  parched_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  parrot_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  pearlescent_froglight:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  peony:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  petrified_oak_slab:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  phantom_membrane:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  phantom_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  piglin_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  piglin_brute_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  piglin_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  piglin_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  piglin_wall_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pig_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  pillager_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  pink_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_petals:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  pink_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_tulip:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pink_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  piston:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  piston_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pitcher_crop:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pitcher_plant:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pitcher_pod:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  plains_village_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  player_head:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  player_wall_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  plenty_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  podzol:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pointed_dripstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poisonous_potato:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polar_bear_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  polished_andesite:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_andesite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_andesite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_basalt:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_blackstone_bricks:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_brick_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_brick_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_brick_wall:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_button:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_pressure_plate:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_blackstone_wall:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  polished_cinnabar:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_cinnabar_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_cinnabar_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_cinnabar_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_deepslate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_deepslate_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_deepslate_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_deepslate_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_diorite:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_diorite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_diorite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_granite:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_granite_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_granite_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_sulfur:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_sulfur_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_sulfur_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_sulfur_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_tuff:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_tuff_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_tuff_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  polished_tuff_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_boat:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_button:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_chest_boat:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_fence:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_fence_gate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_hanging_sign:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_log:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_planks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_pressure_plate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_shelf:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_sign:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_wall_hanging_sign:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_wall_sign:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  poplar_wood:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  popped_chorus_fruit:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  poppy:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  porkchop:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  potato:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  potatoes:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potent_sulfur:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_acacia_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_allium:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_azalea_bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_azure_bluet:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_bamboo:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_birch_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_blue_orchid:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_brown_mushroom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_cactus:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_cherry_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_closed_eyeblossom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_cornflower:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_crimson_fungus:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_crimson_roots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_dandelion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_dark_oak_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_dead_bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_fern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_flowering_azalea_bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_golden_dandelion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_jungle_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_lily_of_the_valley:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_mangrove_propagule:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_oak_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_open_eyeblossom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_orange_tulip:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_oxeye_daisy:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_pale_oak_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_pink_tulip:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_poplar_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_poppy:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_red_mushroom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_red_tulip:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_spruce_sapling:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_torchflower:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_warped_fungus:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_warped_roots:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_white_tulip:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  potted_wither_rose:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  powder_snow:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  powder_snow_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  powder_snow_cauldron:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  powered_rail:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  prismarine:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  prismarine_bricks:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  prismarine_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  prismarine_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  prismarine_crystals:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  prismarine_shard:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  prismarine_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  prismarine_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  prismarine_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  prize_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pufferfish:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  pufferfish_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  pufferfish_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  pumpkin:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pumpkin_pie:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pumpkin_seeds:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  pumpkin_stem:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  purple_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  purple_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purple_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  purpur_block:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  purpur_pillar:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  purpur_slab:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  purpur_stairs:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  quartz:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  quartz_block:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  quartz_bricks:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  quartz_pillar:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  quartz_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  quartz_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  rabbit:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  rabbit_foot:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  rabbit_hide:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  rabbit_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  rabbit_stew:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  rail:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  raiser_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  ravager_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  raw_copper:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  raw_copper_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  raw_gold:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  raw_gold_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  raw_iron:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  raw_iron_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  recovery_compass:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  redstone:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  redstone_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  redstone_lamp:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  redstone_ore:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  redstone_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  redstone_wall_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  redstone_wire:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  red_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_mushroom:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  red_mushroom_block:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_nether_bricks:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_nether_brick_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_nether_brick_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_nether_brick_wall:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_poplar_leaves:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_sand:
+    category: colored
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  red_sandstone:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_sandstone_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_sandstone_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_sandstone_wall:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_shrub:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  red_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_tulip:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  red_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  reinforced_deepslate:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  repeater:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  repeating_command_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  resin_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  resin_brick:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  resin_bricks:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  resin_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  resin_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  resin_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  resin_clump:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  respawn_anchor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  rib_armor_trim_smithing_template:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  rooted_dirt:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  rose_bush:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  rotten_flesh:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  saddle:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD, END]
+    enabled: true
+  salmon:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  salmon_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  salmon_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  sand:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sandstone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sandstone_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sandstone_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  savanna_village_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  scaffolding:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  scrape_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sculk:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sculk_catalyst:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sculk_sensor:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sculk_shrieker:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sculk_vein:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  seagrass:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sea_lantern:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sea_pickle:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sentry_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  shaper_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sheaf_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  shears:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sheep_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  shelf_mushroom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  shelter_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  shield:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  short_dry_grass:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  short_grass:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  shroomlight:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  shulker_box:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  shulker_shell:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  shulker_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  silence_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  silverfish_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  skeleton_horse_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  skeleton_skull:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  skeleton_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  skeleton_wall_skull:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  skull_banner_pattern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  skull_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  slime_ball:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  slime_block:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  slime_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  small_amethyst_bud:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  small_dripleaf:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smithing_table:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  smoker:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  smooth_basalt:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  smooth_quartz:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_quartz_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  smooth_quartz_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  smooth_red_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_red_sandstone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_red_sandstone_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_sandstone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_sandstone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_sandstone_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_stone:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  smooth_stone_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sniffer_egg:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  sniffer_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  snort_pottery_sherd:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  snout_armor_trim_smithing_template:
+    category: nether
+    tier: HARD
+    routes: [NETHER]
+    enabled: true
+  snow:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  snowball:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  snowy_village_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  snow_block:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  snow_golem_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  soul_campfire:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_fire:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  soul_lantern:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_sand:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_soil:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_torch:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  soul_wall_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  spawner:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  spectral_arrow:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  spider_eye:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spider_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  spire_armor_trim_smithing_template:
+    category: end
+    tier: HARD
+    routes: [END]
+    enabled: true
+  splash_potion:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sponge:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  spore_blossom:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  spruce_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_button:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_chest_boat:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_door:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_fence:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_fence_gate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_leaves:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_planks:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_pressure_plate:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_sapling:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_shelf:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_slab:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_stairs:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_trapdoor:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_wall_hanging_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_wall_sign:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spruce_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  spyglass:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  squid_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  stick:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  sticky_piston:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  stone:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stonecutter:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  stone_axe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stone_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stone_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stone_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stone_button:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_hoe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_pickaxe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_pressure_plate:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_shovel:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_slab:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stone_stairs:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stone_sword:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  straw_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  stray_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  strider_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  string:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  stripped_acacia_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_acacia_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_bamboo_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stripped_birch_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_birch_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_cherry_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_cherry_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_crimson_hyphae:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  stripped_crimson_stem:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  stripped_dark_oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_dark_oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_jungle_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_jungle_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_mangrove_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_mangrove_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_pale_oak_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_pale_oak_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_poplar_log:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stripped_poplar_wood:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  stripped_spruce_log:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_spruce_wood:
+    category: wood
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  stripped_warped_hyphae:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  stripped_warped_stem:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  structure_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  structure_void:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  sugar:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sugar_cane:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sulfur:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_cube_bucket:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_cube_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  sulfur_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_spike:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sulfur_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sunflower:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  suspicious_gravel:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  suspicious_sand:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  suspicious_stew:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  swamp_hut_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  sweet_berries:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  sweet_berry_bush:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tadpole_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  tadpole_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  taiga_village_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tall_dry_grass:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tall_grass:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  tall_seagrass:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  target:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  terracotta:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  test_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  test_instance_block:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  tide_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tinted_glass:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tipped_arrow:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tnt:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  tnt_minecart:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  torch:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  torchflower:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  torchflower_crop:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  torchflower_seeds:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  totem_of_undying:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  trader_llama_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  trapped_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  trial_key:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  trial_spawner:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  trident:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  tripwire:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tripwire_hook:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tropical_fish:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tropical_fish_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  tropical_fish_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  tube_coral:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tube_coral_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tube_coral_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tube_coral_wall_fan:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  tuff_bricks:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_brick_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_brick_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_brick_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  tuff_wall:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  turtle_egg:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  turtle_helmet:
+    category: equipment
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  turtle_scute:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  turtle_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  twisting_vines:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  twisting_vines_plant:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  vault:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  verdant_froglight:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  vex_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  vex_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  villager_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  vindicator_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  vine:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  void_air:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wall_torch:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wandering_trader_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  warden_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  ward_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  warm_ocean_ruins_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  warped_button:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_door:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_fence:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_fence_gate:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_fungus:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_fungus_on_a_stick:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_hanging_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_hyphae:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_nylium:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_planks:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_pressure_plate:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_roots:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_shelf:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_slab:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_stairs:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_stem:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_trapdoor:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_wall_hanging_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_wall_sign:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  warped_wart_block:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  water:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  water_bucket:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  water_cauldron:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_block:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_exposed_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_oxidized_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  waxed_weathered_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wayfinder_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_chiseled_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_bars:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_bulb:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_chain:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_chest:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_door:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_golem_statue:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_grate:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_lantern:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_copper_trapdoor:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_cut_copper:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_cut_copper_slab:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_cut_copper_stairs:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weathered_lightning_rod:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  weeping_vines:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  weeping_vines_plant:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wet_sponge:
+    category: overworld
+    tier: HARD
+    routes: [OVERWORLD]
+    enabled: true
+  wheat:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  wheat_seeds:
+    category: nature
+    tier: EASY
+    routes: [OVERWORLD]
+    enabled: true
+  white_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  white_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_tulip:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  white_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  wildflowers:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wild_armor_trim_smithing_template:
+    category: misc
+    tier: HARD
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wind_charge:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  witch_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  wither_rose:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wither_skeleton_skull:
+    category: nether
+    tier: MEDIUM
+    routes: [NETHER]
+    enabled: true
+  wither_skeleton_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  wither_skeleton_wall_skull:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wither_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  wolf_armor:
+    category: overworld
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  wolf_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  wooden_axe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  wooden_hoe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  wooden_pickaxe:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  wooden_shovel:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  wooden_spear:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  wooden_sword:
+    category: equipment
+    tier: EASY
+    routes: [OVERWORLD, NETHER]
+    enabled: true
+  woodland_mansion_map:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  writable_book:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  written_book:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  yellow_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_bed:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_bundle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_candle:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_candle_cake:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_carpet:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_concrete:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_concrete_powder:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_concrete_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_concrete_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_cushion:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_dye:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_glazed_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_harness:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_poplar_leaves:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_shulker_box:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD+END]
+    enabled: true
+  yellow_stained_glass:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_stained_glass_pane:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_terracotta:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_wall_banner:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_wool:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_wool_slab:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  yellow_wool_stairs:
+    category: colored
+    tier: MEDIUM
+    routes: [OVERWORLD]
+    enabled: true
+  zoglin_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  zombie_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  zombie_horse_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  zombie_nautilus_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  zombie_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  zombie_villager_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
+  zombie_wall_head:
+    category: misc
+    tier: MEDIUM
+    routes: [OVERWORLD+NETHER+END]
+    enabled: true
+  zombified_piglin_spawn_egg:
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
