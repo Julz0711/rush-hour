@@ -121,7 +121,7 @@ public final class GameManager implements Listener {
                 Location spawn = worlds.spawn(worlds.first(settings), settings.spread);
                 for (UUID id : entry.members) {
                     Player p = Bukkit.getPlayer(id); if (p == null) continue;
-                    p.getInventory().clear(); p.setLevel(0); p.setExp(0); p.setTotalExperience(0);
+                    p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null); p.setLevel(0); p.setExp(0); p.setTotalExperience(0);
                     p.teleport(spawn); p.setGameMode(GameMode.SURVIVAL);
                     p.setRespawnLocation(spawn, true);
                     p.getActivePotionEffects().forEach(effect -> p.removePotionEffect(effect.getType()));
@@ -438,7 +438,7 @@ public final class GameManager implements Listener {
                     e = new Round.Entry(p.getUniqueId().toString(), p.getName(), settings.skips);
                     e.score = Math.min(round.standings().getFirst().score, (int) (round.elapsed() / 60.0 * settings.catchUp)); round.add(e);
                 }
-                e.members.add(p.getUniqueId()); p.getInventory().clear(); giveKit(p);
+                e.members.add(p.getUniqueId()); p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null); giveKit(p);
                 if (settings.typeWeights.get(Type.ADVANCEMENT) > 0) backups.resetAdvancements(p);
                 p.teleport(worlds.spawn(worlds.first(settings), settings.spread)); p.setGameMode(GameMode.SURVIVAL); lastActivity.put(p.getUniqueId(), System.currentTimeMillis());
             } else spectate(p);

@@ -11,7 +11,7 @@ This first **0.1.0 alpha** includes the PRD's three modes and five objective typ
 3. Give the host `rushhour.host` (operators have it automatically). Players receive `rushhour.play` by default.
 4. Join the lobby, run `/rush setup`, choose the rules, and run `/rush start`.
 
-Use a dedicated minigame server. The plugin manages one round for all online players with the play permission. Pre-game inventories, location, game mode, experience, health, food, flight, potion effects, respawn point, tab presentation, and advancement criteria are saved and restored. Recap books are added after restoration. Survival world block/entity changes persist unless you enable a fresh world.
+Use a dedicated minigame server. The plugin manages one round for all online players with the play permission. Pre-game inventories (including cursor and ender chest), location, game mode, experience, health, food, flight, potion effects, respawn point, tab presentation, and advancement criteria are saved and restored. Ender chests start empty during the round. Recap books are added after restoration. Survival world block/entity changes persist unless you enable a fresh world.
 
 The default is a 60-minute solo Classic round, items only, 3 skips, all three dimensions, and an easy-to-hard difficulty ramp. If your server has disabled the Nether or End, deselect those dimensions before starting or enable fresh worlds.
 

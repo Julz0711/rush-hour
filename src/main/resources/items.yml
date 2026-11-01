@@ -1489,10 +1489,10 @@ items:
     routes: [END]
     enabled: true
   chorus_plant:
-    category: misc
-    tier: MEDIUM
-    routes: [OVERWORLD+NETHER+END]
-    enabled: true
+    category: unobtainable
+    tier: INSANE
+    routes: [OVERWORLD, NETHER, END]
+    enabled: false
   cinnabar:
     category: misc
     tier: MEDIUM

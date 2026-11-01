@@ -30,6 +30,7 @@ class PluginTest {
         assertTrue(plugin.isEnabled());
         assertNotNull(plugin.catalog().get("ITEM:blaze_rod")); assertFalse(plugin.catalog().enabled(plugin.catalog().get("ITEM:bedrock")));
         assertFalse(plugin.catalog().enabled(plugin.catalog().get("ITEM:cow_spawn_egg")));
+        assertFalse(plugin.catalog().enabled(plugin.catalog().get("ITEM:chorus_plant")));
         assertTrue(plugin.catalog().pool(plugin.game().settings()).entries().size() > 100);
     }
     @Test void overworldPoolExcludesNetherAndEndTargets() {
@@ -45,9 +46,11 @@ class PluginTest {
     @Test void backupRestoresInventoryAndLocationAndSurvivesNewManager() {
         var p = server.addPlayer(); p.getInventory().setItem(0, new ItemStack(Material.DIAMOND, 7)); p.setLevel(12);
         var backup = new PlayerBackup(plugin); // Existing lobby recovery is removed before this independent round.
-        backup.restore(p); p.getInventory().setItem(0, new ItemStack(Material.DIAMOND, 7)); p.setLevel(12); backup.capture(p);
-        p.getInventory().clear(); p.setLevel(0); assertTrue(new PlayerBackup(plugin).restore(p));
+        backup.restore(p); p.getInventory().setItem(0, new ItemStack(Material.DIAMOND, 7)); p.setLevel(12);
+        p.getEnderChest().setItem(2, new ItemStack(Material.EMERALD, 5)); p.setItemOnCursor(new ItemStack(Material.GOLD_INGOT, 3)); backup.capture(p);
+        p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null); p.setLevel(0); assertTrue(new PlayerBackup(plugin).restore(p));
         assertEquals(7, p.getInventory().getItem(0).getAmount()); assertEquals(12, p.getLevel()); assertFalse(backup.has(p));
+        assertEquals(5, p.getEnderChest().getItem(2).getAmount()); assertEquals(3, p.getItemOnCursor().getAmount());
     }
     @Test void rejectsInvalidSettingsAndMenuEditsRollBack() {
         assertThrows(IllegalArgumentException.class, () -> plugin.menus().setFromText("deadline-seconds", "1"));

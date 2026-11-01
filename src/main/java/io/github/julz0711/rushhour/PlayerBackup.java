@@ -18,6 +18,8 @@ final class PlayerBackup {
         var c = new YamlConfiguration();
         c.set("location", p.getLocation()); c.set("mode", p.getGameMode().name());
         c.set("contents", Arrays.asList(p.getInventory().getContents()));
+        c.set("ender-chest", Arrays.asList(p.getEnderChest().getContents()));
+        c.set("cursor", p.getItemOnCursor());
         c.set("exp", p.getExp()); c.set("level", p.getLevel()); c.set("total-exp", p.getTotalExperience());
         c.set("health", p.getHealth()); c.set("food", p.getFoodLevel()); c.set("saturation", p.getSaturation());
         c.set("flight", p.getAllowFlight()); c.set("flying", p.isFlying());
@@ -55,6 +57,11 @@ final class PlayerBackup {
         for (int i = 0; i < Math.min(contents.size(), p.getInventory().getSize()); i++) {
             if (contents.get(i) instanceof ItemStack stack) p.getInventory().setItem(i, stack);
         }
+        if (c.contains("ender-chest")) {
+            p.getEnderChest().clear(); List<?> ender = c.getList("ender-chest", List.of());
+            for (int i = 0; i < Math.min(ender.size(), p.getEnderChest().getSize()); i++) if (ender.get(i) instanceof ItemStack stack) p.getEnderChest().setItem(i, stack);
+        }
+        p.setItemOnCursor(c.getItemStack("cursor", new ItemStack(Material.AIR)));
         p.setTotalExperience(c.getInt("total-exp")); p.setLevel(c.getInt("level")); p.setExp((float) c.getDouble("exp"));
         p.setHealth(Math.min(c.getDouble("health", 20), p.getMaxHealth()));
         p.setFoodLevel(c.getInt("food", 20)); p.setSaturation((float) c.getDouble("saturation", 5));
