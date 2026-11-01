@@ -84,6 +84,7 @@ class PluginTest {
         plugin.game().pause(); assertThrows(IllegalStateException.class, () -> plugin.game().skip(p, 0));
         assertThrows(IllegalStateException.class, () -> plugin.game().reloadSettings());
         plugin.game().resume(); plugin.game().stop(); assertEquals(GameManager.Phase.RECAP, plugin.game().phase());
+        assertEquals(server.getWorld("world").getSpawnLocation(), p.getLocation());
         plugin.game().recap("skip"); assertEquals(GameManager.Phase.LOBBY, plugin.game().phase());
         assertEquals(7, p.getInventory().getItem(0).getAmount()); assertEquals(Material.DIAMOND, p.getInventory().getItem(0).getType());
         assertTrue(p.getInventory().contains(Material.WRITTEN_BOOK));

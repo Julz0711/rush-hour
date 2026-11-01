@@ -305,7 +305,10 @@ public final class GameManager implements Listener {
     private void end() {
         if (phase != Phase.PLAYING) return;
         round.finish(); phase = Phase.RECAP; closeGameInventories();
-        for (Player p : Bukkit.getOnlinePlayers()) if (managed.contains(p.getUniqueId())) { p.setGameMode(GameMode.ADVENTURE); p.setFireTicks(0); }
+        Location recapLocation = worlds.lobby(settings).getSpawnLocation();
+        for (Player p : Bukkit.getOnlinePlayers()) if (managed.contains(p.getUniqueId())) {
+            p.setGameMode(GameMode.ADVENTURE); p.teleport(recapLocation); p.setFireTicks(0); p.setFallDistance(0);
+        }
         revealOrder = new ArrayList<>(round.standings()); Collections.reverse(revealOrder);
         revealEntry = 0; revealFind = -1; revealScore = 0; revealDelay = 0; recapFast = false;
         persistResults(); broadcast("Time! Revealing finds from last place to first…");
@@ -348,6 +351,11 @@ public final class GameManager implements Listener {
             }
             var label = lobby.spawn(base.clone().add(.5, height + .5, .5), TextDisplay.class);
             label.text(Component.text(e.name + " · " + e.score)); label.setBillboard(Display.Billboard.CENTER); podium.add(label);
+            for (UUID member : e.members) {
+                Player player = Bukkit.getPlayer(member); if (player == null) continue;
+                player.setAllowFlight(true); player.setFlying(true);
+                player.teleport(base.clone().add(.5, height, .5)); player.setFallDistance(0);
+            }
         }
         for (UUID id : winner.members) {
             Player p = Bukkit.getPlayer(id); if (p == null) continue;
