@@ -15,7 +15,7 @@ final class RushCommands {
     static void register(RushHourPlugin plugin, Commands registrar) {
         var root = Commands.literal("rush").requires(s -> s.getSender().hasPermission("rushhour.play") || s.getSender().hasPermission("rushhour.host"))
                 .executes(c -> execute(c, sender -> sender.sendMessage(Component.text("Rush Hour · /rush setup · start · stop · catalog · team · top · skip · board · bp · spectate\nHost: pause · resume · addtime <seconds> · balance · recap speed|skip · set <setting> <value> · preset save|load <name> · reload", NamedTextColor.GOLD))));
-        root.then(host("setup").executes(c -> execute(c, s -> plugin.menus().setup(player(s), 0))));
+        root.then(host("setup").executes(c -> execute(c, s -> plugin.menus().setup(player(s)))));
         root.then(host("start").executes(c -> execute(c, s -> plugin.game().start())));
         root.then(host("stop").executes(c -> execute(c, s -> plugin.game().stop())));
         root.then(host("pause").executes(c -> execute(c, s -> plugin.game().pause())));

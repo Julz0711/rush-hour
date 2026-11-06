@@ -12,6 +12,7 @@ import org.bukkit.event.block.*;
 import org.bukkit.event.entity.*;
 import org.bukkit.event.inventory.*;
 import org.bukkit.event.player.*;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.scheduler.BukkitTask;
@@ -25,6 +26,7 @@ public final class GameManager implements Listener {
     private final RushHourPlugin plugin;
     private final PlayerBackup backups;
     private final RoundWorlds worlds;
+    private final SkipTokens skipTokens;
     private final Map<UUID, BossBar> bars = new HashMap<>();
     private final Map<UUID, Integer> teams = new HashMap<>();
     private final Map<String, Inventory> backpacks = new HashMap<>();
@@ -46,10 +48,15 @@ public final class GameManager implements Listener {
     private List<Material> chaosMaterials = List.of();
     private final List<Entity> podium = new ArrayList<>();
 
-    GameManager(RushHourPlugin plugin) { this.plugin = plugin; backups = new PlayerBackup(plugin); worlds = new RoundWorlds(plugin); }
+    GameManager(RushHourPlugin plugin) {
+        this.plugin = plugin;
+        backups = new PlayerBackup(plugin);
+        worlds = new RoundWorlds(plugin);
+        skipTokens = new SkipTokens(plugin);
+    }
     void enable() {
         settings = new Settings(plugin.getConfig());
-        for (Player p : Bukkit.getOnlinePlayers()) { backups.restore(p); lobby(p); }
+        for (Player p : Bukkit.getOnlinePlayers()) backups.restore(p);
         ticker = Bukkit.getScheduler().runTaskTimer(plugin, this::tick, 20, 20);
     }
     public Phase phase() { return phase; }
@@ -57,45 +64,56 @@ public final class GameManager implements Listener {
     public Settings settings() { return settings; }
     public boolean locked() { return phase != Phase.LOBBY; }
     public void reloadSettings() { if (locked()) throw new IllegalStateException("Settings are locked until the round ends"); settings = new Settings(plugin.getConfig()); }
-    public void lobby(Player p) {
-        if (!p.hasPermission("rushhour.play")) return;
-        backups.capture(p); managed.add(p.getUniqueId());
-        p.setGameMode(GameMode.ADVENTURE);
-        p.teleport(worlds.lobby(settings).getSpawnLocation());
-        p.sendMessage(text("Rush Hour lobby · /rush setup to configure, /rush team to pick a team."));
+    record StartPlan(ObjectivePool pool, List<Material> chaosItems, int playerCount, String problem) { }
+
+    StartPlan startPlan() {
+        var pool = plugin.catalog().pool(settings);
+        var players = eligiblePlayers();
+        var chaosItems = !settings.chaos ? List.<Material>of() : plugin.catalog().all().stream().filter(o -> o.type() == Type.ITEM && plugin.catalog().enabled(o)
+                && o.available(settings.dimensions) && settings.tierWeights.get(o.tier()) > 0)
+                .map(o -> Material.matchMaterial(o.key())).filter(Objects::nonNull).toList();
+        String problem = null;
+        try {
+            validateParticipants(players);
+            if (pool.entries().isEmpty()) throw new IllegalStateException("No objectives match the catalog, worlds and weights.");
+            if (settings.gameType == Round.Mode.BINGO && pool.entries().size() < 25) throw new IllegalStateException("Bingo needs at least 25 available objectives.");
+            if (settings.chaos && chaosItems.isEmpty()) throw new IllegalStateException("Chaos needs at least one enabled item in the catalog.");
+            validateKit();
+            worlds.validate(settings);
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            problem = e.getMessage();
+        }
+        return new StartPlan(pool, chaosItems, players.size(), problem);
     }
+
+    private List<? extends Player> eligiblePlayers() {
+        return Bukkit.getOnlinePlayers().stream().filter(p -> p.hasPermission("rushhour.play")).toList();
+    }
+
+    private void validateParticipants(List<? extends Player> players) {
+        if (players.isEmpty()) throw new IllegalStateException("At least one player with rushhour.play must be online.");
+        for (Player player : players) {
+            if (player.isDead()) throw new IllegalStateException("Wait for " + player.getName() + " to respawn before starting.");
+        }
+        if (!settings.teams) return;
+        if (players.size() > settings.teamCount * settings.teamLimit) {
+            throw new IllegalStateException("Increase the team count or team size to fit the online players.");
+        }
+        int[] sizes = new int[settings.teamCount + 1];
+        for (Player player : players) {
+            int team = teams.getOrDefault(player.getUniqueId(), 0);
+            if (team > 0 && team <= settings.teamCount && ++sizes[team] > settings.teamLimit) {
+                throw new IllegalStateException("Team " + team + " is over capacity. Increase its size or run /rush balance.");
+            }
+        }
+    }
+
     public void start() {
         if (locked()) throw new IllegalStateException("A round is already active");
         reloadSettings();
-        var pool = plugin.catalog().pool(settings);
-        if (pool.entries().isEmpty()) throw new IllegalStateException("The enabled objective pool is empty for these dimensions and weights");
-        if (settings.gameType == Round.Mode.BINGO && pool.entries().size() < 25) throw new IllegalStateException("Bingo needs at least 25 enabled, available objectives");
-        var players = Bukkit.getOnlinePlayers().stream().filter(p -> p.hasPermission("rushhour.play")).toList();
-        if (players.isEmpty()) throw new IllegalStateException("No players with rushhour.play are online");
-        if (settings.teams && players.size() > settings.teamCount * settings.teamLimit) throw new IllegalStateException("Team capacity is too small for online players");
-        if (pool.entries().size() < 30) broadcast("Small objective pool: " + pool.entries().size() + " targets. Targets repeat after a full cycle.");
-        validateKit();
-        worlds.lobby(settings);
-        // Persist everyone before changing a single inventory or world.
-        for (Player p : players) backups.capture(p);
-        managed.addAll(players.stream().map(Player::getUniqueId).toList());
-        round = new Round(pool, settings.gameType, settings.deadline, settings.points, settings.rowBonus);
-        chaosMaterials = plugin.catalog().all().stream().filter(o -> o.type() == Type.ITEM && plugin.catalog().enabled(o)
-                && o.available(settings.dimensions) && settings.tierWeights.get(o.tier()) > 0)
-                .map(o -> Material.matchMaterial(o.key())).filter(Objects::nonNull).toList();
-        if (settings.chaos && chaosMaterials.isEmpty()) { round = null; throw new IllegalStateException("Chaos mode needs at least one enabled item in the catalog"); }
-        spectators.clear(); backpacks.clear();
-        if (settings.teams) balance(players);
-        for (Player p : players) {
-            String id = settings.teams ? "team-" + teams.get(p.getUniqueId()) : p.getUniqueId().toString();
-            var entry = round.entries().stream().filter(e -> e.id.equals(id)).findFirst().orElse(null);
-            if (entry == null) {
-                entry = new Round.Entry(id, settings.teams ? "Team " + teams.get(p.getUniqueId()) : p.getName(), settings.skips);
-                round.add(entry);
-            }
-            entry.members.add(p.getUniqueId());
-            p.closeInventory(); p.setGameMode(GameMode.ADVENTURE);
-        }
+        StartPlan plan = startPlan();
+        if (plan.problem() != null) throw new IllegalStateException(plan.problem());
+        if (plan.pool().entries().size() < 30) broadcast("Small objective pool: " + plan.pool().entries().size() + " targets. Targets repeat after a full cycle.");
         phase = Phase.PREPARING; cancellingPreparation = false; long token = ++generation;
         broadcast("Preparing round worlds and spawn chunks…");
         try {
@@ -107,32 +125,65 @@ public final class GameManager implements Listener {
                 if (error != null) { plugin.getLogger().log(java.util.logging.Level.SEVERE, "World preparation failed", error); abort("World preparation failed; players restored."); return; }
                 phase = Phase.COUNTDOWN; countdown = settings.countdown;
                 countdownTask = Bukkit.getScheduler().runTaskTimer(plugin, () -> {
-                    if (countdown <= 0) { countdownTask.cancel(); countdownTask = null; begin(); return; }
+                    if (countdown <= 0) { countdownTask.cancel(); countdownTask = null; begin(plan); return; }
                     broadcast("Starting in " + countdown-- + "…");
                 }, 0, 20);
                 });
             });
         } catch (RuntimeException e) { abort("Round setup failed: " + e.getMessage()); throw e; }
     }
-    private void begin() {
+    private void begin(StartPlan plan) {
         try {
+            var players = eligiblePlayers();
+            validateParticipants(players);
+            if (settings.teams) balance(players);
+            round = new Round(plan.pool(), settings.gameType, settings.deadline, settings.points, settings.rowBonus);
+            chaosMaterials = plan.chaosItems();
+            spectators.clear();
+            backpacks.clear();
+            // Snapshot only when the round begins, so survival progress during preparation is kept.
+            for (Player player : players) {
+                backups.capture(player);
+                managed.add(player.getUniqueId());
+            }
+            Map<String, Round.Entry> entries = new LinkedHashMap<>();
+            for (Player player : players) {
+                String id = settings.teams ? "team-" + teams.get(player.getUniqueId()) : player.getUniqueId().toString();
+                Round.Entry entry = entries.computeIfAbsent(id, key -> {
+                    String name = settings.teams ? "Team " + teams.get(player.getUniqueId()) : player.getName();
+                    var created = new Round.Entry(key, name, settings.skips);
+                    round.add(created);
+                    return created;
+                });
+                entry.members.add(player.getUniqueId());
+            }
             worlds.applyRules(settings); roundNumber++;
             for (Round.Entry entry : round.entries()) {
                 Location spawn = worlds.spawn(worlds.first(settings), settings.spread);
                 for (UUID id : entry.members) {
                     Player p = Bukkit.getPlayer(id); if (p == null) continue;
+                    p.closeInventory();
+                    p.closeDialog();
                     p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null); p.setLevel(0); p.setExp(0); p.setTotalExperience(0);
                     p.teleport(spawn); p.setGameMode(GameMode.SURVIVAL);
                     p.setRespawnLocation(spawn, true);
                     p.getActivePotionEffects().forEach(effect -> p.removePotionEffect(effect.getType()));
                     p.setHealth(p.getMaxHealth()); p.setFoodLevel(20); p.setSaturation(10); p.setFireTicks(0); p.setFallDistance(0);
                     if (settings.typeWeights.get(Type.ADVANCEMENT) > 0) backups.resetAdvancements(p);
+                    syncSkipTokens(p, entry);
                     giveKit(p); lastActivity.put(id, System.currentTimeMillis());
                     p.showTitle(Title.title(Component.text("RUSH HOUR", NamedTextColor.GOLD), Component.text("Go!")));
                 }
             }
             phase = Phase.PLAYING; lastNano = System.nanoTime();
-            broadcast("Round " + roundNumber + " started! /rush skip · /rush board · /rush top"); updateHud();
+            String tip = "";
+            if (settings.skips > 0) {
+                tip = round.mode() == Round.Mode.BINGO
+                        ? " Right-click a Skip Token to pick a square."
+                        : " Right-click a Skip Token to reroll.";
+            }
+            broadcast("Round " + roundNumber + " started!" + tip + " /rush board · /rush top");
+            updateHud();
         } catch (RuntimeException e) { plugin.getLogger().log(java.util.logging.Level.SEVERE, "Round start failed", e); abort("Could not start; original player state restored."); }
     }
     private void validateKit() {
@@ -190,8 +241,9 @@ public final class GameManager implements Listener {
         for (Player p : Bukkit.getOnlinePlayers()) {
             if (!active(p)) continue;
             if (settings.idleSeconds > 0 && System.currentTimeMillis() - lastActivity.getOrDefault(p.getUniqueId(), System.currentTimeMillis()) >= settings.idleSeconds * 1000L) { spectate(p); continue; }
-            scan(p); if (!active(p)) continue;
             var e = entry(p).orElseThrow();
+            syncSkipTokens(p, e);
+            scan(p); if (!active(p)) continue;
             var targets = List.copyOf(e.targets);
             String biome = p.getLocation().getBlock().getBiome().getKey().getKey();
             for (Objective o : targets) {
@@ -208,11 +260,15 @@ public final class GameManager implements Listener {
     }
     public void scan(Player p) {
         clock(); if (!active(p)) return;
+        Set<Material> materials = EnumSet.noneOf(Material.class);
+        for (ItemStack item : p.getInventory().getStorageContents()) {
+            if (item != null && !skipTokens.isToken(item)) materials.add(item.getType());
+        }
         // Snapshot prevents a single inventory scan from chasing newly rolled objectives.
         for (Objective o : List.copyOf(entry(p).orElseThrow().targets)) {
             if (o.type() != Type.ITEM) continue;
             Material m = Material.matchMaterial(o.key());
-            if (m != null && p.getInventory().contains(m)) complete(p, o.id());
+            if (materials.contains(m)) complete(p, o.id());
         }
     }
     private void scanNext(Player p) { Bukkit.getScheduler().runTask(plugin, () -> { if (p.isOnline()) scan(p); }); }
@@ -230,13 +286,21 @@ public final class GameManager implements Listener {
     }
     public void skip(Player p, int slot) {
         clock(); if (!active(p)) throw new IllegalStateException("You must be playing an unpaused round");
-        Objective old = round.skip(entry(p).orElseThrow(), slot);
+        Round.Entry entry = entry(p).orElseThrow();
+        Objective old = round.skip(entry, slot);
         if (old == null) throw new IllegalStateException("No skips left, completed square, or no replacement target available");
+        for (UUID member : entry.members) {
+            Player teammate = Bukkit.getPlayer(member);
+            if (teammate != null && !spectators.contains(member) && !teammate.isDead()) syncSkipTokens(teammate, entry);
+        }
         if (settings.giveSkipped && old.type() == Type.ITEM) {
             Material material = Material.matchMaterial(old.key());
             if (material != null) p.getInventory().addItem(new ItemStack(material)).values().forEach(item -> p.getWorld().dropItemNaturally(p.getLocation(), item));
         }
-        p.sendMessage(text("Target skipped · " + entry(p).orElseThrow().skips + " tokens left")); updateHud();
+        p.sendMessage(text("Target skipped · " + entry.skips + " tokens left")); updateHud();
+    }
+    private void syncSkipTokens(Player player, Round.Entry entry) {
+        skipTokens.sync(player, entry.skips, round.mode() == Round.Mode.BINGO, settings.teams);
     }
     public void pause() { clock(); if (phase != Phase.PLAYING) throw new IllegalStateException("No active round"); round.pause(); broadcast("Round paused"); updateHud(); }
     public void resume() { if (phase != Phase.PLAYING) throw new IllegalStateException("No active round"); round.resume(); lastNano = System.nanoTime(); broadcast("Round resumed"); updateHud(); }
@@ -419,19 +483,23 @@ public final class GameManager implements Listener {
     }
     private boolean frozen(Player p) {
         return managed.contains(p.getUniqueId()) && !spectators.contains(p.getUniqueId())
-                && (phase != Phase.PLAYING || round.state() != Round.State.RUNNING);
+                && (phase == Phase.RECAP || phase == Phase.PLAYING && round.state() == Round.State.PAUSED);
     }
     private boolean protectedPlayer(Player p) { return managed.contains(p.getUniqueId()) && (!active(p) || spectators.contains(p.getUniqueId())); }
     @EventHandler public void join(PlayerJoinEvent event) {
         Player p = event.getPlayer();
         Bukkit.getScheduler().runTask(plugin, () -> {
             if (!p.isOnline()) return;
-            if (phase == Phase.LOBBY) { backups.restore(p); lobby(p); return; }
+            if (phase == Phase.LOBBY || phase == Phase.PREPARING || phase == Phase.COUNTDOWN) {
+                backups.restore(p);
+                return;
+            }
             if (round != null && round.entry(p.getUniqueId()).isPresent()) {
                 managed.add(p.getUniqueId());
                 if (phase == Phase.PLAYING && !spectators.contains(p.getUniqueId())) {
                     p.setGameMode(GameMode.SURVIVAL);
                     if (!worlds.contains(p.getWorld())) p.teleport(worlds.spawn(worlds.first(settings), 0));
+                    syncSkipTokens(p, round.entry(p.getUniqueId()).orElseThrow());
                 } else if (spectators.contains(p.getUniqueId())) p.setGameMode(GameMode.SPECTATOR);
                 updateHud(); return;
             }
@@ -446,7 +514,9 @@ public final class GameManager implements Listener {
                     e = new Round.Entry(p.getUniqueId().toString(), p.getName(), settings.skips);
                     e.score = Math.min(round.standings().getFirst().score, (int) (round.elapsed() / 60.0 * settings.catchUp)); round.add(e);
                 }
-                e.members.add(p.getUniqueId()); p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null); giveKit(p);
+                e.members.add(p.getUniqueId()); p.getInventory().clear(); p.getEnderChest().clear(); p.setItemOnCursor(null);
+                syncSkipTokens(p, e);
+                giveKit(p);
                 if (settings.typeWeights.get(Type.ADVANCEMENT) > 0) backups.resetAdvancements(p);
                 p.teleport(worlds.spawn(worlds.first(settings), settings.spread)); p.setGameMode(GameMode.SURVIVAL); lastActivity.put(p.getUniqueId(), System.currentTimeMillis());
             } else spectate(p);
@@ -474,17 +544,40 @@ public final class GameManager implements Listener {
     }
     @EventHandler(ignoreCancelled = true) public void hunger(FoodLevelChangeEvent event) { if (event.getEntity() instanceof Player p && protectedPlayer(p)) event.setCancelled(true); }
     @EventHandler(ignoreCancelled = true) public void breakBlock(BlockBreakEvent event) { if (protectedPlayer(event.getPlayer())) event.setCancelled(true); }
-    @EventHandler(ignoreCancelled = true) public void placeBlock(BlockPlaceEvent event) { if (protectedPlayer(event.getPlayer())) event.setCancelled(true); }
+    @EventHandler(ignoreCancelled = true) public void placeBlock(BlockPlaceEvent event) {
+        if (protectedPlayer(event.getPlayer()) || skipTokens.isToken(event.getItemInHand())) event.setCancelled(true);
+    }
+    @EventHandler(priority = EventPriority.HIGH) public void useSkipToken(PlayerInteractEvent event) {
+        // Paper can pre-cancel right-click air because vanilla has no action there.
+        if ((event.getAction() != Action.RIGHT_CLICK_AIR && event.getAction() != Action.RIGHT_CLICK_BLOCK)
+                || !skipTokens.isToken(event.getItem())) return;
+        event.setCancelled(true);
+        Player player = event.getPlayer();
+        try {
+            clock();
+            if (!active(player)) throw new IllegalStateException("You must be playing an unpaused round");
+            if (round.mode() == Round.Mode.BINGO) plugin.menus().board(player);
+            else skip(player, 0);
+        } catch (IllegalStateException e) {
+            player.sendMessage(Component.text(e.getMessage(), NamedTextColor.RED));
+        }
+    }
     @EventHandler(ignoreCancelled = true) public void interact(PlayerInteractEvent event) {
         if (protectedPlayer(event.getPlayer())) event.setCancelled(true);
         if (spectators.contains(event.getPlayer().getUniqueId()) && event.getItem() != null && event.getItem().getType() == Material.COMPASS) plugin.menus().spectators(event.getPlayer());
     }
-    @EventHandler(ignoreCancelled = true) public void drop(PlayerDropItemEvent event) { if (protectedPlayer(event.getPlayer())) event.setCancelled(true); }
+    @EventHandler(ignoreCancelled = true) public void drop(PlayerDropItemEvent event) {
+        if (protectedPlayer(event.getPlayer()) || skipTokens.isToken(event.getItemDrop().getItemStack())) event.setCancelled(true);
+    }
+    @EventHandler(ignoreCancelled = true) public void tokenSpawn(ItemSpawnEvent event) {
+        if (skipTokens.isToken(event.getEntity().getItemStack())) event.setCancelled(true);
+    }
     @EventHandler(ignoreCancelled = true) public void pickup(EntityPickupItemEvent event) {
         if (event.getEntity() instanceof Player p) { if (protectedPlayer(p)) event.setCancelled(true); else scanNext(p); }
     }
     @EventHandler(ignoreCancelled = true) public void inventory(InventoryClickEvent event) {
         if (!(event.getWhoClicked() instanceof Player p)) return;
+        if (skipTokens.blocksTransfer(p, event)) { event.setCancelled(true); return; }
         Inventory top = event.getView().getTopInventory();
         if (isBackpack(top) && !canBackpack(p, top)) { event.setCancelled(true); return; }
         if (protectedPlayer(p) && !(top.getHolder() instanceof Menus.Menu)) { event.setCancelled(true); return; }
@@ -492,7 +585,9 @@ public final class GameManager implements Listener {
     }
     @EventHandler(ignoreCancelled = true) public void drag(InventoryDragEvent event) {
         if (!(event.getWhoClicked() instanceof Player p)) return;
-        if (protectedPlayer(p) || (isBackpack(event.getView().getTopInventory()) && !canBackpack(p, event.getView().getTopInventory()))) event.setCancelled(true); else scanNext(p);
+        if (skipTokens.isToken(event.getOldCursor()) || protectedPlayer(p)
+                || (isBackpack(event.getView().getTopInventory()) && !canBackpack(p, event.getView().getTopInventory()))) event.setCancelled(true);
+        else scanNext(p);
     }
     @EventHandler(ignoreCancelled = true) public void consume(PlayerItemConsumeEvent event) { if (protectedPlayer(event.getPlayer())) event.setCancelled(true); else scanNext(event.getPlayer()); }
     private void bucket(PlayerBucketEvent event) { if (protectedPlayer(event.getPlayer())) event.setCancelled(true); else scanNext(event.getPlayer()); }
@@ -501,6 +596,7 @@ public final class GameManager implements Listener {
     @EventHandler public void smelt(FurnaceExtractEvent event) { scanNext(event.getPlayer()); }
     @EventHandler public void advancement(PlayerAdvancementDoneEvent event) { complete(event.getPlayer(), Type.ADVANCEMENT + ":" + event.getAdvancement().getKey().getKey()); }
     @EventHandler public void death(PlayerDeathEvent event) {
+        event.getDrops().removeIf(skipTokens::isToken);
         Player p = event.getEntity(); if (!active(p)) return;
         var e = entry(p).orElseThrow();
         if (settings.deathPenalty.equals("POINT")) round.penalty(e);
@@ -509,6 +605,11 @@ public final class GameManager implements Listener {
     @EventHandler public void respawn(PlayerRespawnEvent event) {
         Player p = event.getPlayer(); if (!managed.contains(p.getUniqueId()) || phase != Phase.PLAYING) return;
         if (!worlds.contains(event.getRespawnLocation().getWorld())) event.setRespawnLocation(worlds.spawn(worlds.first(settings), 0));
+        Bukkit.getScheduler().runTask(plugin, () -> {
+            if (p.isOnline() && phase == Phase.PLAYING && !spectators.contains(p.getUniqueId())) {
+                entry(p).ifPresent(entry -> syncSkipTokens(p, entry));
+            }
+        });
     }
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true) public void teleport(PlayerTeleportEvent event) {
         if (event instanceof PlayerPortalEvent) return;

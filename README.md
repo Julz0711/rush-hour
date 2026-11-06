@@ -2,14 +2,14 @@
 
 A server-side survival race for **Paper 26.3 and Java 25**. Find items, kill mobs, earn advancements, visit structures, or reach biomes before the deadline. Vanilla clients can join without a mod or resource pack.
 
-This first **0.1.0 alpha** includes the PRD's three modes and five objective types. Automated tests cover the game engine, catalog filtering, player recovery, and a complete mocked round. A real multiplayer playtest is still required before a public release.
+**0.1.1 alpha** includes the PRD's three modes and five objective types. Automated tests cover the game engine, catalog filtering, player recovery, and a complete mocked round. A real multiplayer playtest is still required before a public release.
 
 ## Install and play
 
 1. Build with Java 25: `./gradlew build` (Windows: `.\gradlew.bat build`).
-2. Copy `build/libs/RushHour-0.1.0.jar` into your Paper server's `plugins/` folder and restart.
+2. Replace the previous Rush Hour JAR in your Paper server's `plugins/` folder with `build/libs/RushHour-0.1.1.jar` and restart.
 3. Give the host `rushhour.host` (operators have it automatically). Players receive `rushhour.play` by default.
-4. Join the lobby, run `/rush setup`, choose the rules, and run `/rush start`.
+4. Join the server and run `/rush setup`. Choose your settings, then select **Review & start** followed by **Start round**.
 
 Use a dedicated minigame server. The plugin manages one round for all online players with the play permission. Pre-game inventories (including cursor and ender chest), location, game mode, experience, health, food, flight, potion effects, respawn point, tab presentation, and advancement criteria are saved and restored. Ender chests start empty during the round. Recap books are added after restoration. Survival world block/entity changes persist unless you enable a fresh world.
 
@@ -19,7 +19,7 @@ The default is a 60-minute solo Classic round, items only, 3 skips, all three di
 
 | Command | Permission | Purpose |
 | --- | --- | --- |
-| `/rush setup` | `rushhour.host` | Edit every round setting in a paginated menu |
+| `/rush setup` | `rushhour.host` | Review the round and edit grouped settings in labeled dialogs |
 | `/rush catalog [search]` | `rushhour.host` | Browse objective tabs, filter categories, toggle targets |
 | `/rush start`, `/rush stop` | `rushhour.host` | Prepare/start, or finish/cancel a round |
 | `/rush pause`, `/rush resume` | `rushhour.host` | Freeze players and the round clock |
@@ -36,7 +36,9 @@ The default is a 60-minute solo Classic round, items only, 3 skips, all three di
 | `/bp`, `/rush bp` | `rushhour.play` | Open the shared team backpack |
 | `/rush spectate` | `rushhour.play` | Spectator player selector |
 
-In setup, click a boolean or enum to cycle it. Left/right clicks change numbers; shift makes a larger step. Text/list settings request a private chat response with a 60-second timeout. Type `cancel` to leave the prompt. In the catalog, click to toggle one target and shift-click to toggle its category. Creative-only entries are disabled by default but can be deliberately enabled by a host.
+The setup dashboard shows the round type, player format, time limit, and selected worlds. Each settings screen has **Save changes** and **Back without saving**. **Review & start** shows eligible players and available objectives and flags anything blocking the start. In the catalog, click to toggle one target and shift-click to toggle its category. Creative-only entries are disabled by default but can be deliberately enabled by a host.
+
+Players can move, mine, build, and manage their inventories as usual between rounds and during world preparation and the countdown. Rush Hour saves their state when the round begins and restores it afterward.
 
 ## Modes, teams, and objectives
 
@@ -44,6 +46,7 @@ In setup, click a boolean or enum to cycle it. Left/right clicks change numbers;
 - **Same-item race (`RACE`):** everyone has the same target. The first confirmed completion scores and advances everyone's target. A skip also advances the shared target and spends only the requesting player's/team's token.
 - **Bingo:** a unique 25-objective card per player/team. Each square scores once. Rows, columns, and both diagonals receive the configured line bonus once each. Completing the card ends the round. Skipping replaces an unfinished square, so it needs a spare objective outside the card.
 - **Teams:** 2–8 teams, a size limit, shared scores/skips/objectives, and a 54-slot backpack. Unassigned players are assigned to the smallest team at start. Teammates spawn together.
+- **Skip Tokens:** The Barrier stack in your hotbar shows how many skips remain. Hold it and right-click to reroll, or pick a square in Bingo. Team members see the same shared balance. Tokens can move around your inventory and stay bound to you during the round.
 - **Objectives:** item possession (confirmed after inventory transactions and once per second), killing blows, newly completed advancements, generated structure bounding boxes, and the player's current 3D biome. No NMS is used.
 
 With a hidden leaderboard, shared tab rows show `?`, only the viewer's own target appears in the private tab footer, and score messages are hidden. Everyone receives the last-to-first find reveal at the end. Score ties use the order in which that score was reached. The recap has titles, sounds, a temporary display-entity podium, harmless winner fireworks, written timeline books, and durable YAML results.

@@ -23,6 +23,18 @@ final class RoundWorlds {
         if (world == null) throw new IllegalArgumentException("Lobby world is not loaded: " + s.lobby);
         return world;
     }
+    void validate(Settings settings) {
+        lobby(settings);
+        if (!settings.fresh) settings.dimensions.forEach(this::existingWorld);
+    }
+
+    private World existingWorld(Dimension dimension) {
+        return Bukkit.getWorlds().stream()
+                .filter(world -> world.getEnvironment() == environment(dimension))
+                .findFirst()
+                .orElseThrow(() -> new IllegalStateException("No loaded " + dimension
+                        + " world. Deselect it in Worlds or choose fresh worlds."));
+    }
     CompletableFuture<Void> prepare(Settings s) {
         preparationCancelled = false;
         worlds.clear(); owned.clear();
@@ -38,8 +50,7 @@ final class RoundWorlds {
                 try { Files.writeString(w.getWorldFolder().toPath().resolve(".rushhour-owned"), "RushHour temporary round world\n"); }
                 catch (IOException e) { throw new IllegalStateException("Cannot mark temporary world", e); }
             } else {
-                w = Bukkit.getWorlds().stream().filter(world -> world.getEnvironment() == env).findFirst().orElse(null);
-                if (w == null) throw new IllegalStateException("No loaded " + d + " world. Enable it in server.properties or use fresh worlds.");
+                w = existingWorld(d);
             }
             worlds.put(d, w);
         }

@@ -37,46 +37,18 @@ public final class Menus implements Listener {
     private static final Map<String, List<String>> ENUMS = Map.of(
             "mode", List.of("SOLO", "TEAMS"), "game-type", List.of("CLASSIC", "RACE", "BINGO"),
             "rules.death-penalty", List.of("NONE", "POINT", "TARGET"), "late-join.mode", List.of("SPECTATE", "PLAY"));
-    Menus(RushHourPlugin plugin) { this.plugin = plugin; }
-    public void setup(Player p, int page) {
-        hostLobby(p);
-        Menu menu = new Menu("Rush Hour · Setup " + (page + 1));
-        var keys = plugin.getConfig().getValues(true).entrySet().stream()
-                .filter(e -> !(e.getValue() instanceof org.bukkit.configuration.ConfigurationSection))
-                .map(Map.Entry::getKey).filter(k -> !k.startsWith("catalog.")).sorted().toList();
-        for (int i = page * 45; i < Math.min(keys.size(), (page + 1) * 45); i++) {
-            String key = keys.get(i); Object value = plugin.getConfig().get(key);
-            menu.button(i % 45, value instanceof Boolean b ? (b ? Material.LIME_DYE : Material.GRAY_DYE) : Material.REPEATER,
-                    key + ": " + value, "Click to edit · right: decrease · shift: bigger step", event -> {
-                        hostLobby(p);
-                        if (value instanceof Boolean b) { change(key, !b); setup(p, page); }
-                        else if (ENUMS.containsKey(key)) {
-                            var values = ENUMS.get(key); int index = values.indexOf(value.toString());
-                            change(key, values.get((index + 1) % values.size())); setup(p, page);
-                        } else if (value instanceof Number number) {
-                            if (key.equals("late-join.catch-up-points")) {
-                                double result = Math.max(0, number.doubleValue() + (event.isRightClick() ? -.5 : .5)); change(key, result);
-                            } else {
-                                int step = key.equals("deadline-seconds") ? 300 : key.equals("world.spread-radius") ? 16 : 1;
-                                if (event.isShiftClick()) step *= 10;
-                                long result = Math.max(0, number.longValue() + (event.isRightClick() ? -step : step));
-                                change(key, result);
-                            }
-                            setup(p, page);
-                        } else if (key.equals("dimensions")) dimensions(p);
-                        else ask(p, "Enter " + key + " in chat (comma-separated for lists, 'empty' to clear).", text -> {
-                            setFromText(key, text); setup(p, page);
-                        });
-                    });
-        }
-        menu.button(45, Material.ARROW, "Previous", "", e -> setup(p, Math.max(0, page - 1)));
-        menu.button(46, Material.ARROW, "Next", "", e -> setup(p, Math.min((keys.size() - 1) / 45, page + 1)));
-        menu.button(48, Material.CHEST, "Objective catalog", "Items, mobs, advancements, structures and biomes", e -> catalog(p, Type.ITEM, "", "", 0));
-        menu.button(49, Material.COMPASS, "Dimensions", plugin.game().settings().dimensions.toString(), e -> dimensions(p));
-        menu.button(50, Material.BOOK, "Catalog presets", "Save and load named catalogs", e -> presets(p));
-        menu.button(53, Material.EMERALD_BLOCK, "Start round", "Start with the current settings", e -> { p.closeInventory(); plugin.game().start(); });
-        p.openInventory(menu.inventory);
+    private final SetupDialogs setupDialogs;
+
+    Menus(RushHourPlugin plugin) {
+        this.plugin = plugin;
+        this.setupDialogs = new SetupDialogs(plugin, this);
     }
+
+    public void setup(Player player) {
+        setupDialogs.open(player);
+    }
+
+
     public void setFromText(String key, String text) {
         if (plugin.game().locked()) throw new IllegalStateException("Settings are locked during a round");
         if (!plugin.getConfig().contains(key) || plugin.getConfig().isConfigurationSection(key) || key.startsWith("catalog.overrides.") || key.startsWith("catalog.categories.")) throw new IllegalArgumentException("Unknown editable setting: " + key);
@@ -91,22 +63,28 @@ public final class Menus implements Listener {
         change(key, value);
     }
     private void change(String path, Object value) {
-        Object old = plugin.getConfig().get(path);
-        plugin.getConfig().set(path, value);
-        try { plugin.game().reloadSettings(); plugin.saveConfig(); }
-        catch (RuntimeException e) { plugin.getConfig().set(path, old); plugin.game().reloadSettings(); throw e; }
+        saveSettings(Map.of(path, value));
     }
-    private void dimensions(Player p) {
-        hostLobby(p); Menu menu = new Menu("Rush Hour · Dimensions"); int slot = 20;
-        for (Dimension d : Dimension.values()) {
-            boolean enabled = plugin.game().settings().dimensions.contains(d);
-            menu.button(slot++, enabled ? Material.LIME_CONCRETE : Material.RED_CONCRETE, d.name(), enabled ? "Enabled" : "Disabled", e -> {
-                hostLobby(p); List<String> values = new ArrayList<>(plugin.getConfig().getStringList("dimensions"));
-                if (!values.remove(d.name())) values.add(d.name()); change("dimensions", values); dimensions(p);
-            });
+
+    void saveSettings(Map<String, Object> values) {
+        if (plugin.game().locked()) throw new IllegalStateException("Settings are locked during a round");
+        var config = plugin.getConfig();
+        Map<String, Object> previous = new LinkedHashMap<>();
+        values.forEach((path, value) -> {
+            previous.put(path, config.get(path));
+            config.set(path, value);
+        });
+        try {
+            plugin.game().reloadSettings();
+            plugin.saveConfig();
+        } catch (RuntimeException e) {
+            previous.forEach(config::set);
+            plugin.game().reloadSettings();
+            throw e;
         }
-        menu.button(49, Material.ARROW, "Setup", "", e -> setup(p, 0)); p.openInventory(menu.inventory);
     }
+
+
     public void catalog(Player p, Type type, String query, String category, int page) {
         hostLobby(p);
         var list = plugin.catalog().all().stream().filter(o -> o.type() == type)
@@ -138,8 +116,8 @@ public final class Menus implements Listener {
             catalog(p, type, query, cycle.get((cycle.indexOf(category) + 1) % cycle.size()), 0);
         });
         menu.button(49, Material.BOOK, "Presets", "Save / load / whitelist", e -> presets(p));
-        menu.button(50, Material.REPEATER, "Type weight: " + plugin.game().settings().typeWeights.get(type), "Configure target-weights in setup", e -> setup(p, 0));
-        menu.button(53, Material.COMPARATOR, "Setup", "", e -> setup(p, 0)); p.openInventory(menu.inventory);
+        menu.button(50, Material.REPEATER, "Type weight: " + plugin.game().settings().typeWeights.get(type), "Choose how often this objective type appears", e -> setupDialogs.objectives(p));
+        menu.button(53, Material.COMPARATOR, "Round setup", "Return to the setup dashboard", e -> setup(p)); p.openInventory(menu.inventory);
     }
     private void presets(Player p) {
         hostLobby(p); Menu menu = new Menu("Rush Hour · Catalog presets");
@@ -206,7 +184,7 @@ public final class Menus implements Listener {
         });
     }
     @EventHandler public void drag(InventoryDragEvent event) { if (event.getView().getTopInventory().getHolder() instanceof Menu) event.setCancelled(true); }
-    private void hostLobby(Player p) {
+    void hostLobby(Player p) {
         if (!p.hasPermission("rushhour.host")) throw new IllegalStateException("You need rushhour.host");
         if (plugin.game().locked()) throw new IllegalStateException("Settings and catalog are locked during a round");
     }

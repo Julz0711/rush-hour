@@ -1,4 +1,10 @@
-# 0.1.0 alpha
+# 0.1.1 alpha
+
+- Replace the setup inventory with labeled settings screens and a review before starting.
+- Keep normal survival available between rounds, during world preparation, and throughout the countdown.
+- Give players Barrier Skip Tokens that show the remaining balance and can be used with a right-click.
+
+## 0.1.0 alpha
 
 - Implement Classic, Same-item race, and 5×5 Bingo rounds with solo/team scoring.
 - Add weighted item, mob, advancement, structure, and biome objectives.

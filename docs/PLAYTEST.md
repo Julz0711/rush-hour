@@ -3,10 +3,11 @@
 Use a disposable server with two or more vanilla clients. Automated tests are complementary to these checks.
 
 - [ ] Start with ordinary inventories, experience, effects, a bed spawn, and advancement progress; confirm restoration after recap, cancel, restart, and reconnect.
-- [ ] Edit every setup page; verify invalid numbers cannot be saved, chat prompts time out, and a stale menu cannot change an active round.
+- [ ] Open `/rush setup` in a Minecraft client. Review each labeled screen, save a change, discard a change, and check the start review with a missing dimension and an empty pool.
+- [ ] Join and play survival while the host configures the round and while the countdown runs. Verify items and position from just before the round are restored after it.
 - [ ] Catalog tabs/search/category toggles/presets/whitelist work; inspect the enabled pool for all-dimension, Overworld-only, Nether-only, and End-only rounds.
 - [ ] Collect targets by pickup, shift-craft, smelting, trade, buckets, offhand and chest transfers; cancel a transaction and verify it cannot award an item still outside the inventory.
-- [ ] Try simultaneous finds in Race, a shared team target, shared skip tokens, and a backpack withdrawal.
+- [ ] Try simultaneous finds in Race and a shared team target. Use a Barrier Skip Token and check both teammates' counts. Try to place, drop, or store a token in a backpack and verify it stays bound.
 - [ ] Complete bingo rows, columns and diagonals, skip a square, and finish the whole card.
 - [ ] Test newly earned advancements; ensure pre-round criteria are reset during the game and restored afterwards.
 - [ ] Confirm mob killing blows, 3D cave biomes, and structure bounding boxes, with excluded dimensions and optional bosses.
